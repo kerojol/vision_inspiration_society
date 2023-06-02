@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.logo{
+	background-color: #1a1146;
+	height: 135px;
+	padding: 15px 0px 20px 100px;
+	font-size: 110px;
+	color: #fff;
+	font-family: "calibri";
+}
+
+
+button{
+	background-color: dodgerBlue;
+	color:white;
+	display: inline-block;
+	font-size: 20px;
+	height: 400px;
+	width: 100px;
+	position:absolute;
+	left: 800px;
+	top:208px;
+	border: 2px solid black;	
+}
+	

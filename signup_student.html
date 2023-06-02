@@ -1,0 +1,423 @@
+<html>
+<head>
+<title>STUDENT SIGN UP </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/*logo VIS N body*/
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+	background-size: auto;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.logo{
+	background-color: rgb(26, 17, 70);
+	height: 170px;
+	padding: 15px 0px 20px 100px;
+	font-size: 110px;
+	color: #fff;
+}
+
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/*ICON*/
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/* DROPDOWN */
+
+.navbar {
+  overflow: hidden;
+  background-color: #00B4CC;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 120px;
+  float:right;
+  position: relative;
+  left: 570px;
+  top: 110px;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #008B8B;
+  width: 120px;  
+  height: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #00B4CC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.show {
+  display: block;
+}
+
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/* SEARCH BAR*/
+
+.search {
+  width: 50%;
+  position: relative;
+  float: right;
+  display: flex;
+  right: 28.5%;
+  top: 110px;
+  
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchButton {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/*REGISTER FORM*/
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #00B4CC;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/*STYLE FOR SUBMIT BUTTON*/
+
+.btn {
+  background-color: #00B4CC;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  background-color: #008B8B;
+}
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/*FOOTER*/
+
+.footer-main-div{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 30px;
+	background-color: rgb(26, 17, 70);
+	padding: 30px 0px;
+	position: static;
+	bottom: 0;
+}
+.footer-social-icons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-social-icons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-social-icons ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+	border-radius: 100%;
+	background: #fff
+}
+.footer-social-icons ul li a{
+	color: #272727;
+	font-size: 25px;
+	display: block;
+}
+.footer-social-icons ul li a i{
+	line-height: 50px;
+}
+.footer-social-icons ul li:hover{
+	background: #301934;
+}
+.footer-social-icons ul li:hover a{
+	color: #fff;
+}
+.footer-menu-one{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 25px;
+}
+.footer-menu-one ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-menu-one ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+.footer-menu-one ul li a{
+	font-family: arial;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer-menu-one ul li a:hover{
+	color: #301934;
+}
+
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+/*TABLE*/
+
+table {
+  border-collapse: separate;
+  border: 1px solid black;
+  border-spacing: 25px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  opacity: 0.5;
+  background-color: Lavender; 
+  opacity: 0.9;  
+}
+
+/*_________________________________________________________________________________________________________________________________________________________________________*/
+
+</script>
+</style>
+</head>
+<body>
+
+	<div class="logo">
+	<img src="mip logo.jpg"  height="170" width="250"/>
+	
+				<!-- SEARCH BOX -->
+				
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+   
+			<!-- NAVIGATION BAR -->  
+			
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Signin.html">Marketplace</a>
+    <a href="Signin.html">Trends</a>
+    <a href="Signin.html">Learning Spot</a>
+    <a href="Signin.html">Download Software</a>
+    <a href="Signin.html">About us</a>
+  </div>
+  </div> 
+</div>
+
+<script>
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// CLOSE DROPDOWN IF CLICK OUTSIDE THE BOX
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+	</div>
+
+<center><h1>STUDENT SIGN UP</h1></center>
+
+		<!-- REGISTER FORM -->
+
+	<table>
+	<tr><td>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Enter Username" name="username" required>
+  </div>
+ 	</tr></td> 
+	
+	<tr><td>
+  <div class="input-container">
+    <i class="fa fa-group icon"></i>
+    <input class="input-field" type="text" placeholder="Create Id" name="id" required>
+  </div>
+ 	</tr></td> 
+	
+	<tr><td>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Enter Email" name="email" required>
+  </div>
+ 	</tr></td> 
+	
+	<tr><td>
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="text" placeholder="Enter Password" name="password" required>
+  </div>
+ 	</tr></td> 
+	
+	<tr><td>
+  <div class="input-container">
+    <i class="fa fa-book icon"></i>
+    <input class="input-field" type="text" placeholder="Enter Qulification" name="qualification" required>
+  </div>
+ 	</tr></td> 
+	
+
+		 <label>
+		 <tr><td>	
+        <input type="checkbox" checked="checked" name="T&C" required>I agree with the T&C 
+ 	</tr></td>
+      </label>
+	  </td>
+	  
+			<!-- REGISTER BUTTON -->	
+			
+		 <tr><td>	
+      <form action="SignIn.html">		 
+		<button type="submit" class="btn" >Register</button>
+      </form>		
+		 </tr></td>
+       </table>
+
+				<!-- FOOTER -->
+				
+	<div class="footer-main-div">
+	
+	<div class="footer-social-icons">
+		<ul>
+			<li><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.twitter.com/" target="blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://www.youtube.com/" target="blank"><i class="fa fa-youtube"></i></a></li>
+		</ul>
+	</div>
+	
+	<div class="footer-menu-one">
+		<ul>
+			<li><a href="#">Home</li>
+				<li><a href="#">About us</li>
+				<li><a href="#">Products</li>
+		</ul>
+	</div>
+	
+	</div>
+</body>
+</html>
